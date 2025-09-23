@@ -1,6 +1,6 @@
 # THE SHOPPERS
 
-We are designing a web page for online grocery shopping. The landing page will have the product catalogue and classified products and products ordering page with paywent links. 
+Our website provides a variety of information about grocery stores, such as location, price, genre, product quality and so on. Users are able and welcomed to write reviews and grade about the information for each grocery store. The overall average score will be calculated and displayed on the page of each store. 
 
 # Installation
 
