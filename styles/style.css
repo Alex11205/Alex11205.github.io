@@ -1,0 +1,236 @@
+/* Add a backgound to the html level so the body part would not be covered. */
+html {
+    background-image: url("../images/background.avif");
+}
+
+
+#bodyframe {
+    
+/* Set the body size. */
+    width: 800px;
+    height: 700px;
+    
+/* Add a border to the body. */
+    border: 2px solid black;
+
+
+/* Set the font family. */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+
+/* Center the body page. */
+    margin: 0 auto;
+
+
+/* Leave some space on top. */
+    margin-top: 20px;
+    
+    
+    
+}
+
+
+/* Adjust the header size and give it a gradient background color. */
+header {
+    padding-top: 20px;
+    padding-bottom: 30px;
+    background-image:linear-gradient(30deg,  white, gray, white ) ;
+}
+
+
+/* Float the logo to the left and adjust the spacing. */
+#logo {
+    
+    float: left;
+    margin-left: 27px;
+    margin-right: 35px;
+    
+
+}
+
+
+/* Set the size of main page and give it a background color. */
+main {
+    background-color:wheat;
+    height: 500px;
+    padding-left: 0px;
+   
+    
+}
+
+
+
+/* Change the color of the text in the header and adjust spacing. */
+#headerpart h1, p {
+    color:darkblue;
+    margin: 0;
+    padding: 0;
+    
+    
+}
+
+
+/* Give a background color to the navibar and adjust spacing. */
+#navbar {
+    
+    padding: 10px;
+    padding-bottom: 0;
+    padding-top: 0;
+    background-color:goldenrod;
+}
+
+/* Delete the list style to make it look like a navbar. */
+#navbar ul {
+    
+    margin: 0px;
+    list-style-type: none;
+    
+}
+
+/* Adjust the spacing of navbar and make them display inline. */
+#navbar li {
+    margin-left: 0px;
+    margin-right: 50px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 10px   ;
+    display: inline-block;
+    
+}
+
+/* Change the background color of the entire list box when the cursor is hovering over it. */
+#navbar li:hover {
+    background-color: gray;
+}
+
+/* Delete the underline of the hyperlinks and adjust the size and color. */
+#navbar a {
+    font-size: larger;
+    
+    color: wheat;
+    text-decoration: none;
+}
+
+/* Doesn't change the color even if the link has been visited. */
+#navbar a:visited {
+    color:wheat;
+
+}
+
+
+/* Change the font weight and color of the text if the user is on the current page. */
+#navbar a.current {
+    
+    font-weight: bolder;
+    color:darkblue;
+}
+
+/* Adjust the font style and spacing of the two unordered lists. */
+#profile1 {
+    float: left;
+    list-style: square;
+    margin-left: 18px;
+    margin-top: 70px;
+}
+
+#profile1 li {
+    font-style: italic;
+}
+
+#profile2 {
+    
+    list-style: square;
+    margin-left: 380px;
+    margin-top: 70px;
+}
+
+#profile2 li {
+    font-style: italic;
+}
+
+
+/* Adjust the size and spacing of the intro part. */
+#intro {
+    margin: 43px;
+    margin-top: 90px;
+    margin-bottom: 110px;
+    font-size: 18px;
+    
+}
+
+/* Adjust the spacing and delete the underline of the links. */
+#link  {
+    margin-top: 70px;
+    list-style-type: none;
+}
+
+/* Make the links in the same line. */
+#link li {
+    margin-left: 0;
+    display: inline;
+    
+}
+
+/* Adjust the spacing and color of the text. */
+#link a {
+    margin-left: 10px;
+    margin-right: 10px;
+    color: blue;
+    
+   
+}
+
+/* Doesn't change the color even if the link has been visited. */
+#link a:visited {
+    color: blue;
+}
+
+/* Adjust passasge spacing. */ 
+#passage {
+    margin:35px;
+    margin-top: 60px;
+}
+
+/* Adjust passasge spacing. */ 
+#passage2 {
+    margin:35px;
+    margin-top: 30px;
+    margin-left: 51px;
+}
+
+/* Adjust image spacing. */ 
+#image {
+    margin-top: 50px;
+    margin-left: 35px;
+}
+
+/* Adjust image spacing. */ 
+#image2 {
+    margin-left: 130px ;
+}
+
+
+
+footer {
+    /* Give the footer a gradient background color. */
+    background-image: linear-gradient(45deg, white, grey);
+
+    /* Adjust the spacing. */
+    padding: 10px;
+
+    /* Give a top border to the footer. */
+    border-top: 2px solid black;
+
+    
+}
+
+
+footer p {
+
+    /* Adjust the font size in the footer. */
+    font-size: 13px;
+    
+    /* Make the text in the center position. */ 
+    text-align: center;
+}
