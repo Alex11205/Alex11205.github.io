@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!--External styles-->
-    <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    
 
     <!--Favicon-->
     <link rel="shortcut icon" href="./images/favicon.ico">
@@ -24,21 +25,26 @@
 
         <img id="logo" src="./images/Logo_The_Shoppers.png" width="80" height="80">
 
-        <!--Navbar-->
-    <nav id="navbar">
+        <div>
+        <h1>THE SHOPPERS</h1>
+        <p>Enjoy your exploring!</p>
+        </div>
+    
+
+        
+
+
+         <!--Navbar-->
+        <nav id="navbar">
         <ul>
             <!--Change the color of the text if on current page-->
             <li><a class="current" href="./index.html">Home</a></li>
-            <li>|</li>
+            
             <li><a href="./list.html">Lists</a></li>
-            <li>|</li>
+            
             <li><a href="./account.html">Account</a></li>
         </ul>
     </nav>
-
-
-        <h1>THE SHOPPERS</h1>
-       
 
 
     </header>
@@ -46,7 +52,60 @@
     
     <main>
 
-        <h1 style="text-align: center;">Home page</h1>
+    <h2 id="h2">Grocery Lists</h2>
+        
+    <div class="groceryborder">
+        <div class="grocery">
+            <h3>Grocery 1</h3>
+            <img class="pagethumbnail" src="./images/background1.jpg">
+            <button class="addtolist" onclick="addToList()">Add to List</button>
+        </div>
+
+        <div class="grocery">
+            <h3>Grocery 2</h3>
+            <img class="pagethumbnail" src="./images/background2.jpg">
+            <button class="addtolist" onclick="addToList()">Add to List</button>
+        </div>
+
+        <div class="grocery">
+            <h3>Grocery 3</h3>
+            <img class="pagethumbnail" src="./images/background3.jpg">
+            <button class="addtolist" onclick="addToList()">Add to List</button>
+        </div>
+
+        <div class="grocery">
+            <h3>Grocery 4</h3>
+            <img class="pagethumbnail" src="./images/background4.jpg">
+            <button class="addtolist" onclick="addToList()">Add to List</button>
+        </div>
+
+        <div class="grocery">
+            <h3>Grocery 5</h3>
+            <img class="pagethumbnail" src="./images/background5.jpg">
+            <button class="addtolist" onclick="addToList()">Add to List</button>
+        </div>
+
+        <div class="grocery">
+            <h3>Grocery 6</h3>
+            <img class="pagethumbnail" src="./images/background6.jpg">
+            <button class="addtolist" onclick="addToList()">Add to List</button>
+        </div>
+
+        <div class="grocery">
+            <h3>Grocery 7</h3>
+            <img class="pagethumbnail" src="./images/background7.jpg">
+            <button class="addtolist" onclick="addToList()">Add to List</button>
+        </div>
+
+        <div class="grocery">
+            <h3>Grocery 8</h3>
+            <img class="pagethumbnail" src="./images/background8.jpeg">
+            <button class="addtolist" onclick="addToList()">Add to List</button>
+        </div>
+
+        
+
+    </div>
     
    
    
@@ -58,10 +117,18 @@
     
         <p>Author: Shuang Liu, Dakshdeep Saini</p>
         <p>Date: 10/19/2025</p>
-        <p>Phone Number: (xxx)-xxx-xxxx</p>
-        <p>Address: xxx xxx </p>
+        <p>Phone Number: (123)-456-7890</p>
+        <p>Address: 205 Humber College Blvd </p>
         
     </footer>
+
+    <script>
+    function addToList() {
+        alert("Successfully added to your list!");
+    }
+    
+    document.getElementsByClassName("addtolist").addEventListener("click", addToList);
+    </script>
 
     
 </body>

@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!--External styles-->
-    <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="stylesheet" href="./styles/account.css">
+    
 
     <!--Favicon-->
     <link rel="shortcut icon" href="./images/favicon.ico">
@@ -24,21 +25,26 @@
 
         <img id="logo" src="./images/Logo_The_Shoppers.png" width="80" height="80">
 
-        <!--Navbar-->
-    <nav id="navbar">
+        <div>
+        <h1>THE SHOPPERS</h1>
+        <p>Enjoy your exploring!</p>
+        </div>
+    
+
+        
+
+
+         <!--Navbar-->
+        <nav id="navbar">
         <ul>
             <!--Change the color of the text if on current page-->
             <li><a href="./index.html">Home</a></li>
-            <li>|</li>
+            
             <li><a href="./list.html">Lists</a></li>
-            <li>|</li>
+            
             <li><a class="current" href="./account.html">Account</a></li>
         </ul>
     </nav>
-
-
-        <h1>THE SHOPPERS</h1>
-       
 
 
     </header>
@@ -46,7 +52,18 @@
     
     <main>
 
-        <h1 style="text-align: center;">Account page</h1>
+        <h3 id="h3">Please sign up:</h3>
+        <form id="signup" action="./signup_success.html" method="get">
+            <div>
+                <label for="userName">User Name:&nbsp;</label>
+                <input type="text" size="40" id="userName" name="userName" required autofocus><br><br>
+                <label for="">Password:&nbsp;</label>
+                <input type="password" size="40" id="password" name="password" pattern="[A-Za-z0-9]{8,}" placeholder="Only numbers and letters, at least 8 characters." required><br><br><br>
+                
+            </div>
+            <input id="submit" type="submit" name="signup" value="Sign up">
+
+        </form>
     
    
    
@@ -58,8 +75,8 @@
     
         <p>Author: Shuang Liu, Dakshdeep Saini</p>
         <p>Date: 10/19/2025</p>
-        <p>Phone Number: (xxx)-xxx-xxxx</p>
-        <p>Address: xxx xxx </p>
+        <p>Phone Number: (123)-456-7890</p>
+        <p>Address: 205 Humber College Blvd </p>
         
     </footer>
 

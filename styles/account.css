@@ -139,10 +139,10 @@ header {
 /* Set the size of main page and give it a background color. */
 main {
     background-color:#e6e6e6;
-    height: 1000px;
+    height: 300px;
     border: 1px solid black;
     padding-left: 0px;
-    padding-right: 0px;
+    padding-top: 10px;
    
     
 }
@@ -181,55 +181,30 @@ footer p {
 }
 
 
-
-.groceryborder {
-    display: grid;
-    grid-template: 230px 230px 230px / 200px 200px 200px;
-    column-gap: 40px;
-    row-gap: 40px;
-    margin-left: 20px;
-    
-    
-   
+#signup div {
+    text-align: right;
+    margin-right: 100px;
 }
 
-.grocery {
-    background-image: linear-gradient(30deg, white, #e6e6e6, white);
-    border: 2px solid #6f9c15;
-    width: 200px;
-    height: 230px;
-    margin: 40px;
-    
-    
+#h3 {
+    margin-left: 48px;
 }
 
-.grocery h3 {
-    color:#6f9c15;
-    text-align: center;
-    margin-top: 10px;
-    margin-bottom: 0px;
-
+#submit {
+    margin-left: 300px;
+    padding: 10px 50px 10px 50px;
 }
 
-.pagethumbnail {
-    width: 120px;
-    height: 120px;
-    margin: 10px 0px 10px 40px;
+#submit:hover {
+    color: #6f9c15;
 }
 
-.grocery button {
 
-    margin-left: 40px;
+#thankyou {
+    list-style-type: none;
 }
 
-.addtolist:hover {
-    color:#E2B77F;
-   
-    
-}
-
-#h2 {
-    text-align: center;
-    margin-bottom: 0px;
-    
+#thankyou li {
+    margin-left: 10px;
+    margin-top: 5px ;
 }
