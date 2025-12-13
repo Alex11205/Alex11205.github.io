@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!--External styles-->
     <link rel="stylesheet" href="./styles/normalize.css">
-    <link rel="stylesheet" href="./styles/style.css">
-    
+    <link rel="stylesheet" href="./styles/indexstyle.css">
+
 
     <!--Favicon-->
     <link rel="shortcut icon" href="./images/favicon.ico">
@@ -15,121 +16,143 @@
     <!--Tab name-->
     <title>Welcome to the Shoppers!</title>
 
+    <script src="./jquery.js"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
+        </script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
 
 </head>
 
-<body id="bodyframe">
+<body>
 
     <!--Header part-->
-    <header id="headerpart">
+
+    <header class="border-bottom">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+
+                <!-- Logo -->
+                <a class="navbar-brand d-flex align-items-center" href="./index.html">
+                    <img src="./images/Logo_The_Shoppers.png" alt="Logo" class="me-2" width="80" height="80">
+                    <span class="fw-bold text-success fs-3">THE SHOPPERS</span><br>
+
+                </a>
+
+                <!-- Mobile toggle button -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Navbar links -->
+
+
+
+
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item fw-bold"><a class="text-success nav-link active"
+                                href="./index.html">Home</a></li>
+                        <li class="nav-item fw-bold"><a class="text-success nav-link" id="accountpage2"
+                                href="./account.html">Lists</a>
+                        </li>
+                        <li class="nav-item fw-bold"><a class="text-success nav-link" id="accountpage3"
+                                href="./account.html">Explore</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a id="dropMenu" class="text-success fw-bold nav-link dropdown-toggle" href="#"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Account
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="text-success dropdown-item" id="accountpage"
+                                        href="./account.html">Profile</a></li>
+                                <li><button class="text-success dropdown-item" id="logout">Log Out</button></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+
+    <!-- <header id="headerpart">
 
         <img id="logo" src="./images/Logo_The_Shoppers.png" width="80" height="80">
 
         <div>
-        <h1>THE SHOPPERS</h1>
-        <p>Enjoy your exploring!</p>
-        </div>
-    
-
-        
+            <h1>THE SHOPPERS</h1>
+            <p>Enjoy your exploring!</p>
+        </div> -->
 
 
-         <!--Navbar-->
-        <nav id="navbar">
-        <ul>
-            <!--Change the color of the text if on current page-->
-            <li><a class="current" href="./index.html">Home</a></li>
-            
-            <li><a href="./list.html">Lists</a></li>
-            
-            <li><a href="./account.html">Account</a></li>
-        </ul>
-    </nav>
+    <!--Navbar-->
+    <!-- <nav id="navbar">
+            <ul> -->
+    <!--Change the color of the text if on current page-->
+    <!-- <li><a class="current" href="./index.html">Home</a></li>
+
+                <li><a id="accountpage2" href="./account.html">Lists</a></li>
+
+                <li><a id="accountpage" href="./account.html">Account</a></li>
+            </ul>
+        </nav>
 
 
-    </header>
+    </header> -->
 
-    
+
     <main>
 
-    <h2 id="h2">Grocery Lists</h2>
-        
-    <div class="groceryborder">
-        <div class="grocery">
-            <h3>Grocery 1</h3>
-            <img class="pagethumbnail" src="./images/background1.jpg">
-            <button class="addtolist" onclick="addToList()">Add to List</button>
-        </div>
 
-        <div class="grocery">
-            <h3>Grocery 2</h3>
-            <img class="pagethumbnail" src="./images/background2.jpg">
-            <button class="addtolist" onclick="addToList()">Add to List</button>
-        </div>
 
-        <div class="grocery">
-            <h3>Grocery 3</h3>
-            <img class="pagethumbnail" src="./images/background3.jpg">
-            <button class="addtolist" onclick="addToList()">Add to List</button>
-        </div>
+        <section style="margin-top: 300px;" class="bg-success text-white text-center py-5">
+            <div class="container">
+                <h1 class="display-4 fw-bold">Welcome to THE SHOPPERS</h1>
+                <p class="lead">This is a website for mastering grocery stores.</p>
+                <a href="./signin.html" class="btn btn-light btn-lg mt-3" id="accountpage4">Get Started</a>
+            </div>
+        </section>
 
-        <div class="grocery">
-            <h3>Grocery 4</h3>
-            <img class="pagethumbnail" src="./images/background4.jpg">
-            <button class="addtolist" onclick="addToList()">Add to List</button>
-        </div>
 
-        <div class="grocery">
-            <h3>Grocery 5</h3>
-            <img class="pagethumbnail" src="./images/background5.jpg">
-            <button class="addtolist" onclick="addToList()">Add to List</button>
-        </div>
 
-        <div class="grocery">
-            <h3>Grocery 6</h3>
-            <img class="pagethumbnail" src="./images/background6.jpg">
-            <button class="addtolist" onclick="addToList()">Add to List</button>
-        </div>
 
-        <div class="grocery">
-            <h3>Grocery 7</h3>
-            <img class="pagethumbnail" src="./images/background7.jpg">
-            <button class="addtolist" onclick="addToList()">Add to List</button>
-        </div>
 
-        <div class="grocery">
-            <h3>Grocery 8</h3>
-            <img class="pagethumbnail" src="./images/background8.jpeg">
-            <button class="addtolist" onclick="addToList()">Add to List</button>
-        </div>
-
-        
-
-    </div>
-    
-   
-   
     </main>
 
     <!--Footer-->
-    <footer>
 
-    
-        <p>Author: Shuang Liu, Dakshdeep Saini</p>
-        <p>Date: 10/19/2025</p>
-        <p>Phone Number: (123)-456-7890</p>
-        <p>Address: 205 Humber College Blvd </p>
-        
+    <footer class="text-center text-white py-4 border-top bg-dark">
+        <div class="container">
+            <p class="mb-0">Developer: THE SHOPPERS</p>
+            <p class="mb-0">Members: Shuang Liu, Dakshdeep Saini</p>
+            <p class="mb-0">Phone Number: (123)-456-7890</p>
+            <p class="mb-0">Address: 205 Humber College Blvd </p>
+            <p class="mb-0">&copy; All rights reserved</p>
+            <a href="https://github.com/Alex11205/Alex11205.github.io/tree/AlexOwnBranch">Github</a>
+        </div>
     </footer>
 
-    <script>
-    function addToList() {
-        alert("Successfully added to your list!");
-    }
-    
-    document.getElementsByClassName("addtolist").addEventListener("click", addToList);
-    </script>
+    <!-- <footer>
 
-    
+
+        <p class="mb-0">Author: Shuang Liu, Dakshdeep Saini</p>
+        <p class="mb-0">Phone Number: (123)-456-7890</p>
+        <p class="mb-0">Address: 205 Humber College Blvd </p>
+
+    </footer> -->
+
+    <script src="./script.js"></script>
+
+
+
 </body>
+
 </html>

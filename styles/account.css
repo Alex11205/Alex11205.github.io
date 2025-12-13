@@ -1,15 +1,15 @@
 /* Add a backgound to the html level so the body part would not be covered. */
-html {
-    background-image: url("../images/background8.jpeg");
+ html {
+    /* background-image: url("../images/background8.jpeg"); */
    
 }
 
 
-#bodyframe {
+body {
     
 /* Set the body size. */
-    width: 800px;
-    height: 700px;
+    /* width: 800px;
+    height: 700px; */
     
 /* Add a border to the body. */
     border: 2px solid black;
@@ -138,8 +138,8 @@ header {
 
 /* Set the size of main page and give it a background color. */
 main {
-    background-color:#e6e6e6;
-    height: 300px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../images/background9.jpg");
+     height: 1000px; 
     border: 1px solid black;
     padding-left: 0px;
     padding-top: 10px;
@@ -151,14 +151,13 @@ main {
 
 
 
-footer {
-    /* Give the footer a gradient background color. */
+/* footer {
+   
     background-image:linear-gradient(60deg, #E2B77F, white, #E2B77F) ;
 
-    /* Adjust the spacing. */
     padding: 5px;
 
-    /* Give a top border to the footer. */
+  
     border-top: 2px solid black;
 
 
@@ -169,19 +168,24 @@ footer {
 footer p {
 
     
-    /* Adjust the font size in the footer. */
+    
     font-size: 15px;
     
-    /* Make the text in the center position. */ 
+  
     
     margin: 2px 2px 2px 280px;
     text-align: left;
     padding: 0px;
     
-}
+} */
 
 
 #signup div {
+    text-align: right;
+    margin-right: 100px;
+}
+
+#signin div {
     text-align: right;
     margin-right: 100px;
 }

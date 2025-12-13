@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--External styles-->
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="stylesheet" href="./styles/account.css">
+
+
+    <!--Favicon-->
+    <link rel="shortcut icon" href="./images/favicon.ico">
+
+    <!--Tab name-->
+    <title>Welcome to the Shoppers!</title>
+
+    <script src="./jquery.js"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
+        </script>
+
+
+</head>
+
+<body id="bodyframe">
+
+    <!--Header part-->
+    <header class="border-bottom">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+
+                <!-- Logo -->
+                <a class="navbar-brand d-flex align-items-center" href="./index.html">
+                    <img src="./images/Logo_The_Shoppers.png" alt="Logo" class="me-2" width="80" height="80">
+                    <span class="fw-bold text-success fs-3">THE SHOPPERS</span><br>
+
+                </a>
+
+                <!-- Mobile toggle button -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Navbar links -->
+
+
+
+
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item fw-bold"><a class="text-success nav-link active"
+                                href="./index.html">Home</a></li>
+                        <li class="nav-item fw-bold"><a class="text-success nav-link" id="accountpage2"
+                                href="./account.html">Lists</a>
+                        </li>
+                        <li class="nav-item fw-bold"><a class="text-success nav-link" id="accountpage3"
+                                href="./account.html">Explore</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a id="dropMenu" class="text-success fw-bold nav-link dropdown-toggle" href="#"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Account
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="text-success dropdown-item" id="accountpage"
+                                        href="./account.html">Profile</a></li>
+                                <li><button class="text-success dropdown-item" id="logout">Log Out</button></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+
+
+    <main>
+
+
+
+
+        <div class="container">
+            <div class="row justify-content-center mt-6">
+                <div style="margin-top: 200px;"
+                    class="bg-secondary text-white text-center p-4 border rounded shadow col-12 col-md-6 col-lg-6">
+                    <h3 id="h3">Please sign up:</h3><br>
+                    <form id="signup">
+                        <div class="mb-3">
+                            <label for="userName" class="form-label ">User Name:&nbsp;</label>
+                            <input type="text" class="form-control" id="userName" name="userName" required
+                                autofocus><br>
+                        </div>
+                        <div class="mb-3">
+                            <label for="password" class="form-label">Password:&nbsp;</label>
+                            <input type="password" class="form-control" id="password" name="password"
+                                pattern="[A-Za-z0-9]{8,}" placeholder="Only numbers and letters, at least 8 characters."
+                                required>
+
+                        </div>
+
+                        <br><button class="btn btn-success border" type="submit">Sign In</button><br><br>
+
+                    </form>
+                    <a class="text-info" href="./signin.html">Already a member?</a><br>
+                    <span id="mesToShow" class="text-warning"></span>
+                </div>
+            </div>
+        </div>
+
+        <!-- <section class="py-5  bg-light border-bottom">
+        <h3 id="h3">Please sign up:</h3>
+        <form id="signup">
+            <div>
+                <label for="userName">User Name:&nbsp;</label>
+                <input type="text" size="40" id="userName" name="userName" required autofocus><br><br>
+                <label for="password">Password:&nbsp;</label>
+                <input type="password" size="40" id="password" name="password" pattern="[A-Za-z0-9]{8,}" placeholder="Only numbers and letters, at least 8 characters." required><br><br><br>
+                
+            </div>
+            <br><br><button type="submit">Sign Up</button><br><br>
+
+        </form>
+            
+        <div id="mesToShow"></div>
+    
+   
+        </section> -->
+    </main>
+
+    <!--Footer-->
+    <footer class="text-center text-white py-4 border-top bg-dark">
+        <div class="container">
+            <p class="mb-0">Developer: THE SHOPPERS</p>
+            <p class="mb-0">Members: Shuang Liu, Dakshdeep Saini</p>
+            <p class="mb-0">Phone Number: (123)-456-7890</p>
+            <p class="mb-0">Address: 205 Humber College Blvd </p>
+            <p class="mb-0">&copy; All rights reserved</p>
+        </div>
+    </footer>
+
+
+    <script src="./signup.js"></script>
+    <script src="./script.js"></script>
+
+
+</body>
+
+</html>

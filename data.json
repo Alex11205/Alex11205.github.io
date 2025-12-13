@@ -1,0 +1,56 @@
+[
+  {
+    "name": "Walmart",
+    "overallscore": "\n                                            Overall Score: 4.2",
+    "productscore": "\n                                            Product Score: 4.6",
+    "distancescore": "\n                                            Distance Score: 3.4",
+    "pricescore": "\n                                            Price Score: 3.5",
+    "url": "https://www.walmart.ca/en",
+    "text": "Go Shopping"
+  },
+  {
+    "name": "Costco",
+    "overallscore": "\n                                            Overall Score: 4.4",
+    "productscore": "\n                                            Product Score: 3.9",
+    "distancescore": "\n                                            Distance Score: 3.5",
+    "pricescore": "\n                                            Price Score: 4.7",
+    "url": "https://www.costco.ca/",
+    "text": "Go Shopping"
+  },
+  {
+    "name": "No Frills",
+    "overallscore": "\n                                            Overall Score: 3.7",
+    "productscore": "\n                                            Product Score: 3.1",
+    "distancescore": "\n                                            Distance Score: 4.4",
+    "pricescore": "\n                                            Price Score: 3.7",
+    "url": "https://www.nofrills.ca/en",
+    "text": "Go Shopping"
+  },
+  {
+    "name": "Metro",
+    "overallscore": "\n                                            Overall Score: 4.4",
+    "productscore": "\n                                            Product Score: 4.0",
+    "distancescore": "\n                                            Distance Score: 4.7",
+    "pricescore": "\n                                            Price Score: 4.3",
+    "url": "https://www.metro.ca/en",
+    "text": "Go Shopping"
+  },
+  {
+    "name": "Food Basics",
+    "overallscore": "\n                                            Overall Score: 4.1",
+    "productscore": "\n                                            Product Score: 3.8",
+    "distancescore": "\n                                            Distance Score: 4.0",
+    "pricescore": "\n                                            Price Score: 4.4",
+    "url": "https://www.foodbasics.ca/",
+    "text": "Go Shopping"
+  },
+  {
+    "name": "Loblaws",
+    "overallscore": "\n                                            Overall Score: 3.9",
+    "productscore": "\n                                            Product Score: 4.6",
+    "distancescore": "\n                                            Distance Score: 3.2",
+    "pricescore": "\n                                            Price Score: 3.0",
+    "url": "https://www.loblaws.ca/en",
+    "text": "Go Shopping"
+  }
+]

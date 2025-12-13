@@ -1,0 +1,251 @@
+/* Add a backgound to the html level so the body part would not be covered. */
+/* html {
+    background-image: url("../images/background8.jpeg");
+   
+} */
+
+body {
+    
+/* Set the body size. */
+    /* width: 800px; */
+    height: 700px;
+    
+/* Add a border to the body. */
+    border: 2px solid black;
+
+
+/* Set the font family. */
+    font-family:cursive;
+    
+
+/* Center the body page. */
+    margin: 0 auto;
+
+
+/* Leave some space on top. */
+    margin-top: 20px;
+    
+    
+    
+}
+
+
+/* Adjust the header size and give it a background color. */
+header {
+    padding-top: 10px;
+    padding-bottom: 0px;
+    
+    background-image: linear-gradient(45deg, white, #E2B77F);
+  
+}
+
+
+/* Float the logo to the left and adjust the spacing. */
+#logo {
+    
+    float: left;
+    margin-left: 27px;
+    margin-right: 0px;
+    
+
+}
+
+#headerpart div {
+    margin-right: 80px;
+}
+
+#headerpart h1 {
+    margin-top: 10px;
+    color:#6f9c15;
+    margin-bottom: 0px;
+    display: flex;
+    justify-content:center;
+    
+    
+}
+
+#headerpart p {
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+
+/* Give a background color to the navibar and adjust spacing. */
+#navbar {
+    
+    padding: 12px;
+   
+    background-color: #6f9c15;
+    
+}
+
+/* Delete the list style to make it look like a navbar. */
+#navbar ul {
+    
+    
+    margin: 0px;
+    margin-left: 30px;
+    list-style-type: none;
+    
+}
+
+/* Adjust the spacing of navbar and make them display inline. */
+#navbar li {
+    
+    margin-left: 0px;
+    margin-right: 0px;
+   
+    padding: 10px 20px 10px 20px;
+    display: inline;
+    
+}
+
+/* Change the background color of the entire list box when the cursor is hovering over it. */
+#navbar li:hover {
+    background-color: #e6e6e6;
+}
+
+/* Delete the underline of the hyperlinks and adjust the size and color. */
+#navbar a {
+   
+    
+    color: black;
+    text-decoration: none;
+}
+
+/* Doesn't change the color even if the link has been visited. */
+#navbar a:visited {
+    color:black;
+
+}
+
+
+/* Change the font weight and color of the text if the user is on the current page. */
+#navbar a.current {
+    
+    font-weight: bolder;
+    color:#E2B77F;
+}
+
+/* Change the color of the text in the header and adjust spacing. */
+
+
+
+
+
+
+
+/* Set the size of main page and give it a background color. */
+main {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../images/background8.jpeg");
+    height: 1000px; 
+    border: 1px solid black;
+    padding-left: 0px;
+    padding-right: 0px;
+   
+    
+}
+
+
+
+
+/* 
+footer {
+  
+    background-image:linear-gradient(60deg, #E2B77F, white, #E2B77F) ;
+
+
+    padding: 5px;
+
+
+    border-top: 2px solid black;
+
+
+    
+}
+
+
+footer p {
+
+    
+  
+    font-size: 15px;
+    
+
+    
+    margin: 2px 2px 2px 280px;
+    text-align: left;
+    padding: 0px;
+    
+} */
+
+
+/* 
+.groceryborder {
+    display: grid;
+    grid-template: 230px 230px 230px / 200px 200px 200px;
+    column-gap: 40px;
+    row-gap: 40px;
+    margin-left: 20px;
+    
+    
+   
+}
+
+.grocery {
+    background-image: linear-gradient(30deg, white, #e6e6e6, white);
+    border: 2px solid #6f9c15;
+    width: 200px;
+    height: 230px;
+    margin: 40px;
+    text-align: center;
+    
+    
+}
+
+.grocery h3 {
+    color:#6f9c15;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 0px;
+
+}
+
+.pagethumbnail {
+    width: 120px;
+    height: 120px;
+    margin: 10px 0px 10px 40px;
+}
+
+.grocery button {
+
+    margin-left: 20px;
+} */
+
+.addtolist:hover {
+    color:#E2B77F;
+   
+    
+}
+
+#h2 {
+    text-align: center;
+    margin-bottom: 0px;
+    
+}
+
+
+#data-display2 button {
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    margin-left: 20px;
+    margin-top: 15px;
+    border: 2px solid black;
+    
+}
+
+#data-display2 button:hover {
+    background-color: red;
+}

@@ -1,14 +1,13 @@
 /* Add a backgound to the html level so the body part would not be covered. */
-html {
+/* html {
     background-image: url("../images/background8.jpeg");
    
-}
+} */
 
-
-#bodyframe {
+body {
     
 /* Set the body size. */
-    width: 800px;
+    /* width: 800px; */
     height: 700px;
     
 /* Add a border to the body. */
@@ -37,6 +36,7 @@ header {
     padding-bottom: 0px;
     
     background-image: linear-gradient(45deg, white, #E2B77F);
+  
 }
 
 
@@ -138,27 +138,27 @@ header {
 
 /* Set the size of main page and give it a background color. */
 main {
-    background-color:#e6e6e6;
-    height: 1000px;
+    
+    /* height: 1000px;  */
     border: 1px solid black;
     padding-left: 0px;
     padding-right: 0px;
-   
-    
+   background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url("../images/background8.jpeg");
+  
 }
 
 
 
 
-
+/* 
 footer {
-    /* Give the footer a gradient background color. */
+  
     background-image:linear-gradient(60deg, #E2B77F, white, #E2B77F) ;
 
-    /* Adjust the spacing. */
+
     padding: 5px;
 
-    /* Give a top border to the footer. */
+
     border-top: 2px solid black;
 
 
@@ -169,19 +169,19 @@ footer {
 footer p {
 
     
-    /* Adjust the font size in the footer. */
+  
     font-size: 15px;
     
-    /* Make the text in the center position. */ 
+
     
     margin: 2px 2px 2px 280px;
     text-align: left;
     padding: 0px;
     
-}
+} */
 
 
-
+/* 
 .groceryborder {
     display: grid;
     grid-template: 230px 230px 230px / 200px 200px 200px;
@@ -199,6 +199,7 @@ footer p {
     width: 200px;
     height: 230px;
     margin: 40px;
+    text-align: center;
     
     
 }
@@ -219,8 +220,8 @@ footer p {
 
 .grocery button {
 
-    margin-left: 40px;
-}
+    margin-left: 20px;
+} */
 
 .addtolist:hover {
     color:#E2B77F;
@@ -232,4 +233,19 @@ footer p {
     text-align: center;
     margin-bottom: 0px;
     
+}
+
+
+#data-display2 button {
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    margin-left: 20px;
+    margin-top: 15px;
+    border: 2px solid black;
+    
+}
+
+#data-display2 button:hover {
+    background-color: red;
 }

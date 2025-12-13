@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--External styles-->
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="stylesheet" href="./styles/style.css">
+
+
+    <!--Favicon-->
+    <link rel="shortcut icon" href="./images/favicon.ico">
+
+    <!--Tab name-->
+    <title>Welcome to the Shoppers!</title>
+
+    <script src="./jquery.js"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
+        </script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+
+</head>
+
+<body>
+
+    <!--Header part-->
+
+    <header class="border-bottom">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+
+                <!-- Logo -->
+                <a class="navbar-brand d-flex align-items-center" href="./index.html">
+                    <img src="./images/Logo_The_Shoppers.png" alt="Logo" class="me-2" width="80" height="80">
+                    <span class="fw-bold text-success fs-3">THE SHOPPERS</span><br>
+
+                </a>
+
+                <!-- Mobile toggle button -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Navbar links -->
+
+
+
+
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item fw-bold"><a class="text-success nav-link active"
+                                href="./index.html">Home</a></li>
+                        <li class="nav-item fw-bold"><a class="text-success nav-link" id="accountpage2"
+                                href="./account.html">Lists</a>
+                        </li>
+                        <li class="nav-item fw-bold"><a class="text-success nav-link" id="accountpage3"
+                                href="./account.html">Explore</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a id="dropMenu" class="text-success fw-bold nav-link dropdown-toggle" href="#"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Account
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="text-success dropdown-item" id="accountpage"
+                                        href="./account.html">Profile</a></li>
+                                <li><button class="text-success dropdown-item" id="logout">Log Out</button></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+
+    <!-- <header id="headerpart">
+
+        <img id="logo" src="./images/Logo_The_Shoppers.png" width="80" height="80">
+
+        <div>
+            <h1>THE SHOPPERS</h1>
+            <p>Enjoy your exploring!</p>
+        </div> -->
+
+
+    <!--Navbar-->
+    <!-- <nav id="navbar">
+            <ul> -->
+    <!--Change the color of the text if on current page-->
+    <!-- <li><a class="current" href="./index.html">Home</a></li>
+
+                <li><a id="accountpage2" href="./account.html">Lists</a></li>
+
+                <li><a id="accountpage" href="./account.html">Account</a></li>
+            </ul>
+        </nav>
+
+
+    </header> -->
+
+
+    <main>
+        <section class="py-5 bg-light  border-bottom">
+            <h2 id="h2" class="fw-bold text-success fs-2">Let's Explore</h2><br>
+
+            <div class="groceryborder">
+                <div class="container py-4">
+                    <div class="row g-5">
+
+
+
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="card h-100" style="width: 18rem; background-color: var(--bs-orange-300);">
+                                <img src="./images/walmart.jpeg" class="card-img-top" alt="Walmart"
+                                    style="height: 300px; object-fit: cover;">
+                                <div class="card-body">
+                                    <h3 class="card-title">Walmart</h3>
+
+                                    <ul class="list-group list-group-flush" style="margin-bottom: 20px;">
+                                        <li class="list-group-item" style="background-color: var(--bs-orange-300);">
+                                            Overall Score: 4.2</li>
+                                        <li class="list-group-item" style="background-color: var(--bs-orange-300);">
+                                            Product Score: 4.6</li>
+                                        <li class="list-group-item" style="background-color: var(--bs-orange-300);">
+                                            Distance Score: 3.4</li>
+                                        <li class="list-group-item" style="background-color: var(--bs-orange-300);">
+                                            Price Score: 3.5</li>
+                                    </ul>
+                                    <button id="heartBtn1" class="addtolist btn btn-outline-danger"
+                                        style="margin-right: 60px; margin-left: 20px;">
+                                        <i class="bi bi-heart"></i>
+                                    </button>
+                                    <a href="https://www.walmart.ca/en" class="btn btn-success">Go Shopping</a>
+
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="card h-100" style="width: 18rem; background-color: var(--bs-orange-300);">
+                                <img src="./images/costco.jpeg" class="card-img-top" alt="Costco"
+                                    style="height: 300px; object-fit: cover;">
+                                <div class="card-body">
+                                    <h3 class="card-title">Costco</h3>
+
+                                    <ul class="list-group list-group-flush" style="margin-bottom: 20px;">
+                                        <li class="list-group-item" style="background-color: var(--bs-orange-300);">
+                                            Overall Score: 4.4</li>
+                                        <li class="list-group-item" style="background-color: var(--bs-orange-300);">
+                                            Product Score: 3.9</li>
+                                        <li class="list-group-item" style="background-color: var(--bs-orange-300);">
+                                            Distance Score: 3.5</li>
+                                        <li class="list-group-item" style="background-color: var(--bs-orange-300);">
+                                            Price Score: 4.7</li>
+                                    </ul>
+                                    <button id="heartBtn2" class="addtolist btn btn-outline-danger"
+                                        style="margin-right: 60px; margin-left: 20px;">
+                                        <i class="bi bi-heart"></i>
+                                    </button>
+                                    <a href="https://www.costco.ca/" class="btn btn-success">Go Shopping</a>
+
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="card h-100" style="width: 18rem; background-color: var(--bs-orange-300);">
+                                <img src="./images/nofrills.jpg" class="card-img-top" alt="No Frills"
+                                    style="height: 300px; object-fit: cover;">
+                                <div class="card-body">
+                                    <h3 class="card-title">No Frills</h3>
+
+                                    <ul class="list-group list-group-flush" style="margin-bottom: 20px;">
+                                        <li class="list-group-item" style="background-color: var(--bs-orange-300);">
+                                            Overall Score: 3.7</li>
+                                        <li class="list-group-item" style="background-color: var(--bs-orange-300);">
+                                            Product Score: 3.1</li>
+                                        <li class="list-group-item" style="background-color: var(--bs-orange-300);">
+                                            Distance Score: 4.4</li>
+                                        <li class="list-group-item" style="background-color: var(--bs-orange-300);">
+                                            Price Score: 3.7</li>
+                                    </ul>
+                                    <button id="heartBtn3" class="addtolist btn btn-outline-danger"
+                                        style="margin-right: 60px; margin-left: 20px;">
+                                        <i class="bi bi-heart"></i>
+                                    </button>
+                                    <a href="https://www.nofrills.ca/en" class="btn btn-success">Go Shopping</a>
+
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="card h-100" style="width: 18rem; background-color: var(--bs-orange-300);">
+                                <img src="./images/loblaws.avif" class="card-img-top" alt="Loblaws"
+                                    style="height: 300px; object-fit: cover;">
+                                <div class="card-body">
+                                    <h3 class="card-title">Loblaws</h3>
+
+                                    <ul class="list-group list-group-flush" style="margin-bottom: 20px;">
+                                        <li class="list-group-item" style="background-color: var(--bs-orange-300);">
+                                            Overall Score: 3.9</li>
+                                        <li class="list-group-item" style="background-color: var(--bs-orange-300);">
+                                            Product Score: 4.6</li>
+                                        <li class="list-group-item" style="background-color: var(--bs-orange-300);">
+                                            Distance Score: 3.2</li>
+                                        <li class="list-group-item" style="background-color: var(--bs-orange-300);">
+                                            Price Score: 3.0</li>
+                                    </ul>
+                                    <button id="heartBtn4" class="addtolist btn btn-outline-danger"
+                                        style="margin-right: 60px; margin-left: 20px;">
+                                        <i class="bi bi-heart"></i>
+                                    </button>
+                                    <a href="https://www.loblaws.ca/en" class="btn btn-success">Go Shopping</a>
+
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="card h-100" style="width: 18rem; background-color: var(--bs-orange-300);">
+                                <img src="./images/foodbasics.jpg" class="card-img-top" alt="Food Basics"
+                                    style="height: 300px; object-fit: cover;">
+                                <div class="card-body">
+                                    <h3 class="card-title">Food Basics</h3>
+
+                                    <ul class="list-group list-group-flush" style="margin-bottom: 20px;">
+                                        <li class="list-group-item" style="background-color: var(--bs-orange-300);">
+                                            Overall Score: 4.1</li>
+                                        <li class="list-group-item" style="background-color: var(--bs-orange-300);">
+                                            Product Score: 3.8</li>
+                                        <li class="list-group-item" style="background-color: var(--bs-orange-300);">
+                                            Distance Score: 4.0</li>
+                                        <li class="list-group-item" style="background-color: var(--bs-orange-300);">
+                                            Price Score: 4.4</li>
+                                    </ul>
+                                    <button id="heartBtn5" class="addtolist btn btn-outline-danger"
+                                        style="margin-right: 60px; margin-left: 20px;">
+                                        <i class="bi bi-heart"></i>
+                                    </button>
+                                    <a href="https://www.foodbasics.ca/" class="btn btn-success">Go Shopping</a>
+
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="card h-100" style="width: 18rem; background-color: var(--bs-orange-300);">
+                                <img src="./images/metro.jpg" class="card-img-top" alt="Metro"
+                                    style="height: 300px; object-fit: cover;">
+                                <div class="card-body">
+                                    <h3 class="card-title">Metro</h3>
+
+                                    <ul class="list-group list-group-flush" style="margin-bottom: 20px;">
+                                        <li class="list-group-item" style="background-color: var(--bs-orange-300);">
+                                            Overall Score: 4.4</li>
+                                        <li class="list-group-item" style="background-color: var(--bs-orange-300);">
+                                            Product Score: 4.0</li>
+                                        <li class="list-group-item" style="background-color: var(--bs-orange-300);">
+                                            Distance Score: 4.7</li>
+                                        <li class="list-group-item" style="background-color: var(--bs-orange-300);">
+                                            Price Score: 4.3</li>
+                                    </ul>
+                                    <button id="heartBtn6" class="addtolist btn btn-outline-danger"
+                                        style="margin-right: 60px; margin-left: 20px;">
+                                        <i class="bi bi-heart"></i>
+                                    </button>
+                                    <a href="https://www.metro.ca/en" class="btn btn-success">Go Shopping</a>
+
+
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+            <!--         
+        <div class="grocery">
+            <h3>Grocery 1</h3>
+            <h4>Score: score1</h4>
+            <img class="pagethumbnail" src="#" alt="image1"><br>
+            <a>Link: url1</a>
+            <button class="addtolist">Add to List</button>
+        </div>
+
+        <div class="grocery">
+            <h3>Grocery 2</h3>
+            <h4>Score: score2</h4>
+            <img class="pagethumbnail" src="#" alt="image2"><br>
+            <a>Link: url2</a>
+            <button class="addtolist">Add to List</button>
+        </div>
+        <div class="grocery">
+            <h3>Grocery 3</h3>
+            <h4>Score: score3</h4>
+            <img class="pagethumbnail" src="#" alt="image3"><br>
+            <a>Link: url3</a>
+            <button class="addtolist">Add to List</button>
+        </div>
+        <div class="grocery">
+            <h3>Grocery 4</h3>
+            <h4>Score: score4</h4>
+            <img class="pagethumbnail" src="#" alt="image4"><br>
+            <a>Link: url4</a>
+            <button class="addtolist">Add to List</button>
+        </div>
+        <div class="grocery">
+            <h3>Grocery 5</h3>
+            <h4>Score: score5</h4>
+            <img class="pagethumbnail" src="#" alt="image5"><br>
+            <a>Link: url5</a>
+            <button class="addtolist">Add to List</button>
+        </div>
+        <div class="grocery">
+            <h3>Grocery 6</h3>
+            <h4>Score: score6</h4>
+            <img class="pagethumbnail" src="#" alt="image6"><br>
+            <a>Link: url6</a>
+            <button class="addtolist">Add to List</button>
+        </div>
+        <div class="grocery">
+            <h3>Grocery 7</h3>
+            <h4>Score: score7</h4>
+            <img class="pagethumbnai7" src="#" alt="image7"><br>
+            <a>Link: url7</a>
+            <button class="addtolist">Add to List</button>
+        </div>
+        <div class="grocery">
+            <h3>Grocery 8</h3>
+            <h4>Score: score8</h4>
+            <img class="pagethumbnail" src="#" alt="image8"><br>
+            <a>Link: url8</a>
+            <button class="addtolist">Add to List</button>
+        </div>
+        <div class="grocery">
+            <h3>Grocery 9</h3>
+            <h4>Score: score9</h4>
+            <img class="pagethumbnail" src="#" alt="image9"><br>
+            <a>Link: url9</a>
+            <button class="addtolist">Add to List</button>
+        </div> -->
+
+
+
+            </div>
+
+
+        </section>
+    </main>
+
+    <!--Footer-->
+
+    <footer class="text-center text-white py-4 border-top bg-dark">
+        <div class="container">
+            <p class="mb-0">Developer: THE SHOPPERS</p>
+            <p class="mb-0">Members: Shuang Liu, Dakshdeep Saini</p>
+            <p class="mb-0">Phone Number: (123)-456-7890</p>
+            <p class="mb-0">Address: 205 Humber College Blvd </p>
+            <p class="mb-0">&copy; All rights reserved</p>
+        </div>
+    </footer>
+
+    <!-- <footer>
+
+
+        <p class="mb-0">Author: Shuang Liu, Dakshdeep Saini</p>
+        <p class="mb-0">Phone Number: (123)-456-7890</p>
+        <p class="mb-0">Address: 205 Humber College Blvd </p>
+
+    </footer> -->
+
+    <script src="./script.js"></script>
+
+
+
+</body>
+
+</html>
